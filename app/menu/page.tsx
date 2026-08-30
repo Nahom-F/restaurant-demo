@@ -3,6 +3,11 @@ import { menuItems } from "@/db/schema";
 import { eq } from "drizzle-orm";
 import Link from "next/link";
 
+// Menu content changes via the admin panel, so this must reflect live DB
+// state on every request — not a build-time snapshot. Also avoids needing
+// a live DB connection with tables already created at Vercel build time.
+export const dynamic = "force-dynamic";
+
 const CATEGORY_LABELS: Record<string, string> = {
   breakfast: "Breakfast",
   lunch: "Lunch",

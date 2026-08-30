@@ -3,6 +3,8 @@ import { galleryImages } from "@/db/schema";
 import { asc } from "drizzle-orm";
 import Image from "next/image";
 
+export const dynamic = "force-dynamic";
+
 export default async function GalleryPage() {
   const images = await db
     .select()

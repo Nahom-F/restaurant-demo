@@ -4,6 +4,8 @@ import { eq } from "drizzle-orm";
 import { notFound } from "next/navigation";
 import IngredientDetailClient from "./IngredientDetailClient";
 
+export const dynamic = "force-dynamic";
+
 export default async function MenuItemPage({
   params,
 }: {
