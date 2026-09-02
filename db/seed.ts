@@ -130,12 +130,9 @@ async function seed() {
   console.log("Seeding gallery images...");
 
   await db.insert(galleryImages).values([
-    { imageUrl: "/images/gallery/interior-1.jpg", caption: "Main dining room", sortOrder: 1 },
-    { imageUrl: "/images/gallery/interior-2.jpg", caption: "Bar seating", sortOrder: 2 },
-    { imageUrl: "/images/gallery/patio.jpg", caption: "Outdoor patio", sortOrder: 3 },
-    { imageUrl: "/images/gallery/plating-1.jpg", caption: "Pan-Seared Salmon, plated", sortOrder: 4 },
-    { imageUrl: "/images/gallery/plating-2.jpg", caption: "Dark Chocolate Lava Cake", sortOrder: 5 },
-    { imageUrl: "/images/gallery/kitchen.jpg", caption: "Open kitchen", sortOrder: 6 },
+    { imageUrl: "/images/hero-bg.png", caption: "The marble island, evenings", sortOrder: 1 },
+    { imageUrl: "/images/gallery/open-shelving.png", caption: "Open shelving, kitchenside", sortOrder: 2 },
+    { imageUrl: "/images/gallery/bar-shelving.png", caption: "The bar", sortOrder: 3 },
   ]);
 
   console.log("Seed complete.");
